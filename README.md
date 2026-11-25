@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo.png" alt="Bird Empires logo" width="320"></p>
+
 # Bird Empires
 
 A 3D bird-nation strategy sandbox for phone, iPad and desktop browsers. Design your own bird species, raise a flag, and build an empire on a living world of rival flocks.

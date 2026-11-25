@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 560" role="img" aria-label="Bird Empires logo">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0b8"/><stop offset=".35" stop-color="#f1c75b"/><stop offset=".7" stop-color="#c8902c"/><stop offset="1" stop-color="#8a5a14"/>
+    </linearGradient>
+    <linearGradient id="goldH" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff4c8"/><stop offset=".5" stop-color="#e2b24a"/><stop offset="1" stop-color="#9a6516"/>
+    </linearGradient>
+    <radialGradient id="field" cx=".5" cy=".32" r=".75">
+      <stop offset="0" stop-color="#2f8c96"/><stop offset=".55" stop-color="#145867"/><stop offset="1" stop-color="#0a2b36"/>
+    </radialGradient>
+    <radialGradient id="glow" cx=".5" cy=".4" r=".5">
+      <stop offset="0" stop-color="#ffe8a0" stop-opacity=".55"/><stop offset="1" stop-color="#ffe8a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="plume" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffaf0"/><stop offset="1" stop-color="#e6dcc6"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0473a"/><stop offset="1" stop-color="#8e1d1d"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d63b33"/><stop offset=".55" stop-color="#a5221f"/><stop offset="1" stop-color="#6e1212"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#000" flood-opacity=".45"/></filter>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#06222b" flood-opacity=".6"/></filter>
+    <path id="shieldP" d="M256 44 C 330 66 392 66 428 58 C 436 190 432 330 256 452 C 80 330 76 190 84 58 C 120 66 182 66 256 44 Z"/>
+    <path id="leaf" d="M0 0 C 12 -14 36 -16 52 -5 C 36 8 13 10 0 0 Z"/>
+    <path id="feather" d="M0 0 C -14 -40 -12 -96 0 -128 C 12 -96 14 -40 0 0 Z"/>
+    <path id="tailF" d="M0 0 C -11 26 -10 62 0 84 C 10 62 11 26 0 0 Z"/>
+  </defs>
+
+  <!-- laurel wreath -->
+  <g filter="url(#shadow)">
+    <g fill="url(#goldH)" stroke="#7a4e10" stroke-width="1.5">
+      <path d="M150 470 C 70 420 44 320 66 200" fill="none" stroke="url(#goldH)" stroke-width="7" stroke-linecap="round"/>
+      <path d="M362 470 C 442 420 468 320 446 200" fill="none" stroke="url(#goldH)" stroke-width="7" stroke-linecap="round"/>
+      <g id="wreathL">
+        <use href="#leaf" transform="translate(140 462) rotate(200)"/>
+        <use href="#leaf" transform="translate(116 446) rotate(155)"/>
+        <use href="#leaf" transform="translate(110 438) rotate(222)"/>
+        <use href="#leaf" transform="translate(90 412) rotate(150)"/>
+        <use href="#leaf" transform="translate(86 404) rotate(232)"/>
+        <use href="#leaf" transform="translate(72 374) rotate(148)"/>
+        <use href="#leaf" transform="translate(70 364) rotate(240)"/>
+        <use href="#leaf" transform="translate(62 330) rotate(150)"/>
+        <use href="#leaf" transform="translate(62 320) rotate(245)"/>
+        <use href="#leaf" transform="translate(59 286) rotate(155)"/>
+        <use href="#leaf" transform="translate(60 276) rotate(250)"/>
+        <use href="#leaf" transform="translate(60 244) rotate(160)"/>
+        <use href="#leaf" transform="translate(63 234) rotate(255)"/>
+        <use href="#leaf" transform="translate(65 206) rotate(200)"/>
+      </g>
+      <use href="#wreathL" transform="translate(512 0) scale(-1 1)"/>
+    </g>
+  </g>
+
+  <!-- shield -->
+  <g filter="url(#shadow)">
+    <use href="#shieldP" fill="url(#gold)" transform="translate(256 248) scale(1.07) translate(-256 -248)"/>
+    <use href="#shieldP" fill="#5a3a0c" transform="translate(256 248) scale(1.025) translate(-256 -248)"/>
+    <use href="#shieldP" fill="url(#field)"/>
+    <ellipse cx="256" cy="210" rx="170" ry="150" fill="url(#glow)"/>
+    <!-- subtle rays -->
+    <g stroke="#ffe9a8" stroke-opacity=".09" stroke-width="10">
+      <path d="M256 200 L256 60"/><path d="M256 200 L150 76"/><path d="M256 200 L362 76"/><path d="M256 200 L98 150"/><path d="M256 200 L414 150"/>
+    </g>
+    <use href="#shieldP" fill="none" stroke="#ffe39a" stroke-opacity=".55" stroke-width="2" transform="translate(256 248) scale(.95) translate(-256 -248)"/>
+  </g>
+
+  <!-- the bird: heraldic, wings raised -->
+  <g filter="url(#soft)">
+    <!-- left wing -->
+    <g id="wingL" transform="translate(232 238)">
+      <g fill="url(#plume)" stroke="#9c8a66" stroke-width="1.6">
+        <use href="#feather" transform="rotate(-82) scale(.82 .9)"/>
+        <use href="#feather" transform="rotate(-68) scale(.9 1.02)"/>
+        <use href="#feather" transform="rotate(-54) scale(.96 1.1)"/>
+        <use href="#feather" transform="rotate(-40) scale(1 1.14)"/>
+        <use href="#feather" transform="rotate(-26) scale(1 1.12)"/>
+        <use href="#feather" transform="rotate(-12) scale(.95 1.02)"/>
+      </g>
+      <!-- gold covert band -->
+      <path d="M0 0 C -30 -24 -66 -58 -84 -96 C -56 -86 -26 -64 4 -36 Z" fill="url(#goldH)" stroke="#7a4e10" stroke-width="1.5"/>
+      <path d="M-6 -4 C -40 -6 -86 -24 -112 -48 C -78 -50 -40 -36 -4 -22 Z" fill="url(#goldH)" stroke="#7a4e10" stroke-width="1.5"/>
+    </g>
+    <use href="#wingL" transform="translate(512 0) scale(-1 1)"/>
+    <!-- tail fan -->
+    <g transform="translate(256 318)" fill="url(#plume)" stroke="#9c8a66" stroke-width="1.6">
+      <use href="#tailF" transform="rotate(32)"/><use href="#tailF" transform="rotate(16)"/>
+      <use href="#tailF" transform="rotate(-32)"/><use href="#tailF" transform="rotate(-16)"/>
+      <use href="#tailF" fill="url(#goldH)" stroke="#7a4e10"/>
+    </g>
+    <!-- talons -->
+    <g stroke="#e8a23a" stroke-width="7" stroke-linecap="round" fill="none">
+      <path d="M238 318 L226 344 M226 344 L212 350 M226 344 L222 360 M226 344 L236 358"/>
+      <path d="M274 318 L286 344 M286 344 L300 350 M286 344 L290 360 M286 344 L276 358"/>
+    </g>
+    <!-- body -->
+    <path d="M256 168 C 296 176 306 236 298 280 C 292 314 276 334 256 338 C 236 334 220 314 214 280 C 206 236 216 176 256 168 Z" fill="url(#plume)" stroke="#9c8a66" stroke-width="2"/>
+    <!-- breast chevrons -->
+    <g fill="none" stroke="#c9b48a" stroke-width="3" stroke-linecap="round" opacity=".8">
+      <path d="M236 246 Q256 262 276 246"/><path d="M238 268 Q256 284 274 268"/><path d="M242 290 Q256 304 270 290"/>
+    </g>
+    <!-- neck & head -->
+    <path d="M240 186 C 236 160 244 134 262 126 C 284 118 304 132 304 154 C 304 172 292 184 280 190 Z" fill="url(#plume)" stroke="#9c8a66" stroke-width="2"/>
+    <!-- crest -->
+    <g fill="url(#red)" stroke="#5e1010" stroke-width="1.5">
+      <path d="M252 140 C 236 126 222 122 206 124 C 220 132 232 140 246 150 Z"/>
+      <path d="M254 132 C 242 114 230 106 214 104 C 226 116 236 128 248 142 Z"/>
+      <path d="M260 126 C 254 108 246 98 234 90 C 240 106 246 120 252 136 Z"/>
+    </g>
+    <!-- crimson mask stripe -->
+    <path d="M262 132 C 278 126 296 132 302 146 C 290 146 276 150 266 156 Z" fill="url(#red)"/>
+    <!-- beak (facing right, proud) -->
+    <path d="M300 146 C 322 144 340 150 350 160 C 338 160 326 164 318 172 C 310 166 302 160 300 154 Z" fill="#f0a43a" stroke="#8a5310" stroke-width="2"/>
+    <path d="M318 172 C 326 164 338 160 350 160 C 346 168 336 174 324 176 Z" fill="#c9771d"/>
+    <!-- eye -->
+    <circle cx="286" cy="148" r="6.5" fill="#101418"/><circle cx="288.2" cy="145.8" r="2.2" fill="#fff"/>
+    <!-- crown -->
+    <g transform="translate(270 92)">
+      <path d="M-34 30 L-38 -6 L-20 10 L0 -22 L20 10 L38 -6 L34 30 Z" fill="url(#gold)" stroke="#6b430d" stroke-width="2.5" stroke-linejoin="round"/>
+      <rect x="-36" y="24" width="72" height="12" rx="3" fill="url(#gold)" stroke="#6b430d" stroke-width="2.5"/>
+      <circle cx="0" cy="-24" r="5" fill="#fff4c8" stroke="#6b430d" stroke-width="2"/>
+      <circle cx="-38" cy="-8" r="4" fill="#fff4c8" stroke="#6b430d" stroke-width="2"/>
+      <circle cx="38" cy="-8" r="4" fill="#fff4c8" stroke="#6b430d" stroke-width="2"/>
+      <circle cx="0" cy="30" r="5" fill="url(#red)" stroke="#6b430d" stroke-width="1.5"/>
+      <circle cx="-20" cy="30" r="3.5" fill="#2f8c96" stroke="#6b430d" stroke-width="1.2"/>
+      <circle cx="20" cy="30" r="3.5" fill="#2f8c96" stroke="#6b430d" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- star sparkles -->
+  <g fill="#fff3c4">
+    <path d="M140 140 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" opacity=".85"/>
+    <path d="M372 132 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z" opacity=".7"/>
+    <path d="M384 300 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z" opacity=".55"/>
+  </g>
+
+  <!-- ribbon banner -->
+  <g filter="url(#shadow)">
+    <path d="M40 432 L96 424 L84 456 L96 490 L40 482 L58 457 Z" fill="#6e1212"/>
+    <path d="M472 432 L416 424 L428 456 L416 490 L472 482 L454 457 Z" fill="#6e1212"/>
+    <path d="M86 418 C 180 446 332 446 426 418 L 426 476 C 332 504 180 504 86 476 Z" fill="url(#ribbon)" stroke="url(#goldH)" stroke-width="4"/>
+    <path id="arc" d="M110 462 C 190 486 322 486 402 462" fill="none"/>
+    <text font-family="'Alegreya SC','Trajan Pro','Cinzel','Palatino Linotype',Georgia,serif" font-weight="800" font-size="36" letter-spacing="2" textLength="286" lengthAdjust="spacingAndGlyphs" fill="#ffe9a8" stroke="#4a0c0c" stroke-width="1.2" paint-order="stroke" text-anchor="middle"><textPath href="#arc" startOffset="50%">BIRD EMPIRES</textPath></text>
+  </g>
+</svg>
